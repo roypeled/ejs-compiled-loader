@@ -33,5 +33,5 @@ module.exports = function (source) {
     template = ast.print_to_string({beautify: true});
   }
 
-  return 'module.exports = ' + template;
+  return 'module.exports = ' + template(opts.params);
 };
